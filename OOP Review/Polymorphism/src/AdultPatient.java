@@ -1,7 +1,38 @@
 import java.util.ArrayList;
 
-public class AdultPatientextends Person implements Diagnosable {
+public class AdultPatient extends Person implements Diagnosable implements Employable {
 
+    double temperature;
+    int systolic;
+    int diastolic;
+
+    @Override
+    public double getTemperature() {
+        return temperature;
+    }
+
+    @Override
+    public int getSystolic() {
+        return systolic;
+    }
+
+    @Override
+    public int getDiastolic() {
+        return diastolic;
+    }
+
+    @Override
+    public void setTemperature(double t) {
+        temperature = t;
+    }
+
+    @Override
+    public void setSystolic(int s) {
+        systolic = s;
+    }
+
+    @Override
+    public void setDiastolic(int d) {
+        diastolic = d;
+    }
 }
-Implement the class Adult Patient. 
-An adult patient is a Person that is Diagnosable and that is Employable.

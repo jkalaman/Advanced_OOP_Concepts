@@ -10,11 +10,13 @@ public class Task {
         Diagnosable lisa = new ChildPatient();
         ChildPatient maggie = new ChildPatient();
         AdultPatient homer = new AdultPatient();
-        Employable marge = new AdultPatient();
+        Employable marge = (Employable) new AdultPatient();
 
         // Set the temperature of each child.
-        /* TODO */
-Set the tmeperature of bart to 101.2, maggie 100.1, and lisa 100.6
+        lisa.setTemperature(100.6);
+        ((ChildPatient) bart).setTemperature(101.2);
+        maggie.setTemperature(100.1);
+
 
         // set the jobs
         /* TODO */

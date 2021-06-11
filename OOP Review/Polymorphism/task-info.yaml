@@ -3,8 +3,8 @@ files:
 - name: src/Task.java
   visible: true
   placeholders:
-  - offset: 470
-    length: 77
+  - offset: 602
+    length: 0
     placeholder_text: |-
       /* TODO */
       Set the tmeperature of bart to 101.2, maggie 100.1, and lisa 100.6
@@ -12,13 +12,13 @@ files:
       length: 77
       offset: 470
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       ((ChildPatient)bart).setTemperature(101.2);
               maggie.setTemperature(100.1);
               lisa.setTemperature(100.6);
-  - offset: 581
+  - offset: 636
     length: 120
     placeholder_text: |-
       /* TODO */
@@ -35,7 +35,7 @@ files:
               homer.addJob("Major");
               homer.addJob("Bar Owner");
               marge.addJob("House Keeper");
-  - offset: 771
+  - offset: 826
     length: 115
     placeholder_text: |-
       /* TODO */
@@ -235,7 +235,7 @@ files:
   visible: true
   placeholders:
   - offset: 54
-    length: 151
+    length: 620
     placeholder_text: "/* TODO */\nImplement the class Adult Patient. \nAn adult patient\
       \ is a Person that is Diagnosable and that is Employable."
     initial_state:
