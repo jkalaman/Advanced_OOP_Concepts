@@ -1,3 +1,4 @@
+
 public class Database {
     private String[] colNames;
     private int numRows;
@@ -28,14 +29,30 @@ public class Database {
     }
 
     public Database(String contents) {
-/* TODO 
-This constructor should take the contents of a CSV file and initialize the memember variables of the Database class.
-*/
+        String[] lines = contents.split("\\r?\\n");
+        setColNames(lines[0].split(","));
+        setNumRows(lines.length);
+        String[][] arr = new String[getNumRows()][getColNames().length];
+        for (int i = 0; i < lines.length; i++) {
+            String[] tmp = lines[i].split(",");
+
+            for (int j = 0; j < tmp.length; j++) arr[i][j] = tmp[j];
+        }
+        setData(arr.clone());
     }
 
+
+
+
+
     public String getValue(String columnName,int row){
-/* TODO */
-This method should return the data contained on row "row" and the column matching  @columname
+        int colIndex=0;
+        for(int i=0; i <getColNames().length; i++){
+            if(getColNames()[i] == columnName)
+                colIndex = i;
+        }
+
+        return this.data[row][colIndex];
     }
 
 }
