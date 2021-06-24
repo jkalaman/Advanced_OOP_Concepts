@@ -9,6 +9,7 @@ public class Task {
         String[] tmp = d.getColNames();
         System.out.println(Arrays.toString(tmp));
         System.out.println(d.getNumRows());
+
     }
 
     public Database readCSV(String filename) {
