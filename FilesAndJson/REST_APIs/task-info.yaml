@@ -99,7 +99,7 @@ files:
   visible: true
   placeholders:
   - offset: 874
-    length: 451
+    length: 440
     placeholder_text: "/* TODO \nYou have to use the url to retrieve the contents\
       \ of the website. \nThis will be a String, but in JSON format. */"
     initial_state:
@@ -119,7 +119,7 @@ files:
 
               }
               scan.close();
-  - offset: 1326
+  - offset: 1315
     length: 0
     placeholder_text: "/* TODO \nRemember to return a JSON object.*/"
     initial_state:
@@ -129,7 +129,7 @@ files:
     selected: true
     status: Unchecked
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject())
-  - offset: 1482
+  - offset: 1471
     length: 30
     placeholder_text: "/* TODO \nFill in this data type (Object) */"
     initial_state:
@@ -139,7 +139,7 @@ files:
     selected: true
     status: Unchecked
     encrypted_possible_answer: URL
-  - offset: 1522
+  - offset: 1511
     length: 27
     placeholder_text: |-
       /* TODO
@@ -151,7 +151,7 @@ files:
     selected: true
     status: Unchecked
     encrypted_possible_answer: URL
-  - offset: 1859
+  - offset: 1848
     length: 56
     placeholder_text: |-
       /* TODO
@@ -173,8 +173,8 @@ files:
 
               }
               scan.close();
-  - offset: 1931
-    length: 155
+  - offset: 1920
+    length: 144
     placeholder_text: "/* TODO \nreturn the appropriate result.\n*/"
     initial_state:
       length: 42
@@ -183,7 +183,7 @@ files:
     selected: true
     status: Unchecked
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject());
-  - offset: 2156
+  - offset: 2134
     length: 515
     placeholder_text: "/* TODO \nThis should return a String with each recipe in three\
       \ lines:\nTitle:the title of the recipe\nLink:the link to the recipe\nIngredients:The\
@@ -202,7 +202,7 @@ files:
                   results += "link:"+(String)obj.get("href")+"\n";
                   results += "ingredients:"+(String)obj.get("ingredients")+"\n";
               }
-  - offset: 2770
+  - offset: 2748
     length: 383
     placeholder_text: "/* TODO\nGiven a String with some text in it, write that text\
       \ to a file. \nThe name of the file is given in outfile */"

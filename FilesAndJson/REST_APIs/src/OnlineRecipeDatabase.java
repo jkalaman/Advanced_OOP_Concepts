@@ -26,7 +26,7 @@ public class OnlineRecipeDatabase {
             }catch(MalformedURLException e) {
                 System.out.println("oops " + e.getMessage()) ;
             }catch(IOException e) {
-            System.out.println("Could not read webpage " + e.toString());
+            System.out.println("Could not read webpage " + e);
         }
         JsonObject content = (JsonObject) Jsoner.deserialize(var,new JsonObject());
         return content;
@@ -50,7 +50,7 @@ This will be a String, but in JSON format. */
         } catch (MalformedURLException e) {
             System.out.println("oops " + e.getMessage());
         } catch (IOException e) {
-            System.out.println("Could not read webpage " + e.toString());
+            System.out.println("Could not read webpage " + e);
         }
         JsonObject content = (JsonObject) Jsoner.deserialize(var,new JsonObject());
         return content;
