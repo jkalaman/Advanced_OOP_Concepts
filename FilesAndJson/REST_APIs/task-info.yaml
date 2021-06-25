@@ -98,15 +98,15 @@ files:
 - name: src/OnlineRecipeDatabase.java
   visible: true
   placeholders:
-  - offset: 593
-    length: 120
+  - offset: 874
+    length: 451
     placeholder_text: "/* TODO \nYou have to use the url to retrieve the contents\
       \ of the website. \nThis will be a String, but in JSON format. */"
     initial_state:
       length: 120
       offset: 593
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |2-
 
@@ -119,28 +119,28 @@ files:
 
               }
               scan.close();
-  - offset: 729
-    length: 44
+  - offset: 1326
+    length: 0
     placeholder_text: "/* TODO \nRemember to return a JSON object.*/"
     initial_state:
       length: 44
       offset: 729
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject())
-  - offset: 922
-    length: 43
+  - offset: 1482
+    length: 30
     placeholder_text: "/* TODO \nFill in this data type (Object) */"
     initial_state:
       length: 43
       offset: 922
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: URL
-  - offset: 976
-    length: 41
+  - offset: 1522
+    length: 27
     placeholder_text: |-
       /* TODO
       Fill in this datatype (Object) */
@@ -148,11 +148,11 @@ files:
       length: 41
       offset: 976
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: URL
-  - offset: 1046
-    length: 52
+  - offset: 1859
+    length: 56
     placeholder_text: |-
       /* TODO
       Read the information coming from the web
@@ -161,7 +161,7 @@ files:
       length: 52
       offset: 1046
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |2-
        // From now on is like reading from the keyboard...
@@ -173,18 +173,18 @@ files:
 
               }
               scan.close();
-  - offset: 1114
-    length: 42
+  - offset: 1931
+    length: 155
     placeholder_text: "/* TODO \nreturn the appropriate result.\n*/"
     initial_state:
       length: 42
       offset: 1114
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject());
-  - offset: 1258
-    length: 172
+  - offset: 2156
+    length: 515
     placeholder_text: "/* TODO \nThis should return a String with each recipe in three\
       \ lines:\nTitle:the title of the recipe\nLink:the link to the recipe\nIngredients:The\
       \ ingredients of teh recipe.*/"
@@ -192,7 +192,7 @@ files:
       length: 172
       offset: 1258
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       JsonArray recipes = (JsonArray) doc.get("results");
@@ -202,15 +202,15 @@ files:
                   results += "link:"+(String)obj.get("href")+"\n";
                   results += "ingredients:"+(String)obj.get("ingredients")+"\n";
               }
-  - offset: 1528
-    length: 116
+  - offset: 2770
+    length: 383
     placeholder_text: "/* TODO\nGiven a String with some text in it, write that text\
       \ to a file. \nThe name of the file is given in outfile */"
     initial_state:
       length: 116
       offset: 1528
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       try(DataOutputStream out = new DataOutputStream(new FileOutputStream(outfile))){
