@@ -48,7 +48,7 @@ public class Database {
     public String getValue(String columnName,int row){
         int colIndex=0;
         for(int i=0; i <getColNames().length; i++){
-            if(getColNames()[i] == columnName)
+            if(getColNames()[i].equals(columnName))
                 colIndex = i;
         }
 

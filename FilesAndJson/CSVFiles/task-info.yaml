@@ -121,7 +121,7 @@ files:
               }
               this.numRows = lines.length - 1;
   - offset: 1062
-    length: 204
+    length: 209
     placeholder_text: |-
       /* TODO */
       This method should return the data contained on row "row" and the column matching  @columname
