@@ -17,7 +17,7 @@ public class Task {
             bingo.add(new BingoChip<String,Integer>("B",12));
 
             System.out.println("Draw a bingo chip");
-            System.out.println(bingo.drawOne());
+            System.out.println(String.valueOf(bingo.drawOne()));
         }catch(BagException e){
             e.printStackTrace();
         }

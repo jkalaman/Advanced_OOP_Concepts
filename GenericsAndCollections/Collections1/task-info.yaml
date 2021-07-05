@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 510
-    length: 66
+    length: 46
     placeholder_text: |-
       /* TODO
       Compete a for loop that prints every card
@@ -13,12 +13,12 @@ files:
       length: 66
       offset: 510
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       c : d)
                   System.out.print(c+", ");
-  - offset: 640
+  - offset: 1232
     length: 87
     placeholder_text: "/* TODO \nThis should compute the sum of values of the cards\
       \ in an ArrayList of cards.*/"
@@ -27,7 +27,7 @@ files:
       offset: 640
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |2-
              int sum = 0;
               for(Card c:hand){
@@ -170,7 +170,7 @@ files:
 - name: src/Deck.java
   visible: true
   placeholders:
-  - offset: 243
+  - offset: 857
     length: 133
     placeholder_text: "/* TODO \nThis constructor initializes the deck variable with\n\
       all the cards of a deck, except a joker.\nThe suits array may help you.*/"
@@ -178,8 +178,8 @@ files:
       length: 133
       offset: 243
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |2
               this.deck=new LinkedList<Card>();
               for (String suit : suits) {
@@ -189,7 +189,7 @@ files:
                   deck.add(new Card<String, String>("Jack", suit));
                   deck.add(new Card<String, String>("Queen", suit));
                   deck.add(new Card<String, String>("King", suit));
-  - offset: 421
+  - offset: 1097
     length: 177
     placeholder_text: |-
       /* TODO
@@ -201,27 +201,27 @@ files:
       offset: 421
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |2-
               int idx = (int)Math.round(Math.random()*(deck.size()-1));
               if (deck.size()>0)
                   return deck.remove(idx);
               else
                   return null;
-  - offset: 628
-    length: 67
+  - offset: 1304
+    length: 19
     placeholder_text: '/* TODO: Return the size of the deck (number of cards left
       in it)*/'
     initial_state:
       length: 67
       offset: 628
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |2-
 
               return this.deck.size();
-  - offset: 762
+  - offset: 1449
     length: 75
     placeholder_text: "/* TODO \nReturn a new DeckIterator with this instance in the\
       \ constructor.*/"
@@ -230,7 +230,7 @@ files:
       offset: 762
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: ' return new DeckIterator<Card>(this);'
   text: "import java.util.Iterator;\nimport java.util.LinkedList;\nimport java.util.List;\n\
     \npublic class Deck implements Iterable<Card>{\n    private List<Card> deck;\n\
@@ -249,7 +249,7 @@ files:
   visible: true
   placeholders:
   - offset: 57
-    length: 43
+    length: 22
     placeholder_text: |-
       /* TODO
       Implement the Iterator interface */
@@ -257,10 +257,10 @@ files:
       length: 43
       offset: 57
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: implements Iterator<E>
-  - offset: 148
+  - offset: 147
     length: 36
     placeholder_text: |-
       /* TODO
@@ -270,9 +270,9 @@ files:
       offset: 148
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: '        this.d = d;'
-  - offset: 244
+  - offset: 345
     length: 61
     placeholder_text: |-
       /* TODO
@@ -282,9 +282,9 @@ files:
       offset: 244
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: ' return d.size()>0;'
-  - offset: 357
+  - offset: 491
     length: 37
     placeholder_text: |-
       /* TODO
@@ -293,8 +293,8 @@ files:
       length: 37
       offset: 357
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: return (E) this.d.dealCard();
   text: |
     import java.util.Iterator;
@@ -320,5 +320,10 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: class java.util.ArrayList$Itr cannot be cast to class DeckIterator (java.util.ArrayList$Itr
+    is in module java.base of loader &#39;bootstrap&#39;; DeckIterator is in unnamed
+    module of loader &#39;app&#39;)
+  time: Mon, 05 Jul 2021 20:25:54 UTC
 record: -1
