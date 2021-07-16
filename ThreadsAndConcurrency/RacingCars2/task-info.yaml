@@ -102,7 +102,7 @@ files:
   visible: true
   placeholders:
   - offset: 19
-    length: 1140
+    length: 1067
     placeholder_text: "/* TODO \nThis class is exactly as the Racer from Task 1*/"
     initial_state:
       length: 57
@@ -177,5 +177,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Thu, 15 Jul 2021 22:07:21 UTC
+  time: Fri, 16 Jul 2021 01:53:04 UTC
 record: -1

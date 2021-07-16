@@ -14,7 +14,6 @@ Create a constructor that receives a Car objec and initializes c.*/
 
             while (c.odometer < distance)
             {
-                System.out.println("In the while loop: " +c.toString());
 
                 if(c.miles == 0) {
                     System.out.println(c.name + " is charging");
